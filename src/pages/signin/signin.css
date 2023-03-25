@@ -1,0 +1,77 @@
+/* Default styles */
+
+.origin1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height:100%;
+   width:100%;
+}
+
+.mainbox {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   border: 1px solid rgb(218, 218, 218);
+   margin-top: 5%;
+   width:33.33%;
+   height: 80vh;
+   border-radius: 10px;
+}
+
+.googlelogo{
+   margin-top: 50px;
+}
+
+.signinoption{
+   font-size: 30px;
+}
+
+.inputs {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 80%;
+   gap: 1em;
+}
+
+.buttoninputs {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   gap: 6em;
+}
+
+/* Media queries for responsive design */
+
+@media screen and (max-width: 768px) {
+   .mainbox {
+      width: 60%;
+      height: auto;
+      margin-top: 10%;
+   }
+
+   .buttoninputs {
+      gap: 3em;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .origin1 {
+      padding: 0 1em;
+   }
+
+   .mainbox {
+      width: 90%;
+      margin-top: 15%;
+   }
+
+   .buttoninputs {
+      flex-direction: column;
+      gap: 2em;
+   }
+}

@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+import Signin from "./pages/signin/signim";
+import SignUp from "./pages/signup/signup";
+import HeaderFun from "./components/header/header";
+import DemoForPrac from "./pages/demoForPrac/demoForPrac";
+import Takenoteone from "./components/takenote1/takenote1";
+import Takenotetwo from "./components/takenote2/takenote2";
+import DashBoardFun from "./pages/dashboard/dashboard";
+import Demo from "./pages/demoForPrac/demoForPrac";
+import { Provider } from "react-redux";
+import store from "./store";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <Provider store={store}>
+      <div className="App">
+        <Signin/>   
+        {/*     <SignUp/>   */}
+        {/*   <HeaderFun/>   */}
+        {/*  <DemoForPrac/>   <Takenotetwo/>    */}
+
+        {/* <DashBoardFun /> */}
+        {/* <Demo/> */}
+      </div>
+    // </Provider>
   );
 }
 

@@ -1,0 +1,20 @@
+.iconlist{
+   width: 100%;
+   align-items: center;
+  display: flex;
+   justify-content:space-between;
+}
+
+
+/* 
+.indicard{
+    border: solid red; 
+   margin: auto;
+   padding: auto;
+} */
+
+
+.titleofnote{
+   font-weight: bold;
+  
+}
